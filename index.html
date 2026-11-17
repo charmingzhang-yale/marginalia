@@ -1,14 +1,22 @@
 
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>冷月无声 | 个人札记</title>
 
+  <!-- 加载思源宋体 / Noto Serif SC -->
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
   <style>
-    /* ===== 颜色设置 ===== */
     :root {
       --paper: #F5F1E7;
       --ink: #493F35;
@@ -25,20 +33,22 @@
       scroll-behavior: smooth;
     }
 
-    /* ===== 全站字体与背景 ===== */
     body {
       margin: 0;
       background: var(--paper);
       color: var(--ink);
-      font-family: "Microsoft YaHei", "PingFang SC",
-                   "Noto Sans CJK SC", "Noto Sans SC",
-                   sans-serif;
-      font-size: 17px;
+
+      font-family: "Noto Serif SC",
+                   "Source Han Serif SC",
+                   "Songti SC",
+                   serif;
+
+      font-size: 18px;
       font-weight: 400;
-      line-height: 1.85;
+      line-height: 1.9;
     }
 
-    /* ===== 顶部标题区域 ===== */
+    /* 网站标题 */
     header {
       background: var(--green);
       color: #F5EEE0;
@@ -49,7 +59,7 @@
     header h1 {
       font-size: 2.6rem;
       font-weight: 500;
-      letter-spacing: 0.10em;
+      letter-spacing: 0.12em;
       margin: 12px 0;
     }
 
@@ -59,9 +69,10 @@
 
     header small {
       color: #C9B58C;
+      font-size: 0.8rem;
     }
 
-    /* ===== 导航栏 ===== */
+    /* 导航 */
     nav {
       text-align: center;
       padding: 20px;
@@ -73,13 +84,13 @@
       margin: 0 16px;
       color: var(--ink);
       text-decoration: none;
+      font-size: 0.9rem;
     }
 
     nav a:hover {
       color: var(--accent);
     }
 
-    /* ===== 链接 ===== */
     a {
       color: #806044;
     }
@@ -88,7 +99,7 @@
       text-decoration: underline;
     }
 
-    /* ===== 主体布局 ===== */
+    /* 主体宽度 */
     main {
       max-width: 800px;
       margin: 0 auto;
@@ -100,17 +111,17 @@
       scroll-margin-top: 20px;
     }
 
-    /* ===== 栏目标题 ===== */
+    /* 栏目标题 */
     h2 {
       font-size: 1.35rem;
       font-weight: 600;
-      line-height: 1.5;
+      line-height: 1.6;
       border-bottom: 1px solid #D8CDBB;
       padding-bottom: 10px;
       margin-bottom: 22px;
     }
 
-    /* ===== 文章列表 ===== */
+    /* 文章 */
     article {
       padding: 12px 0 20px;
       border-bottom: 1px solid #E1D8CA;
@@ -118,22 +129,23 @@
 
     article h3 {
       font-size: 1.1rem;
-      font-weight: 600;
-      line-height: 1.6;
+      font-weight: 500;
+      line-height: 1.7;
       margin: 4px 0 10px;
     }
 
     article p {
-      line-height: 1.9;
+      font-weight: 400;
+      line-height: 1.95;
       margin: 10px 0;
     }
 
     .meta {
       color: var(--muted);
-      font-size: 0.85rem;
+      font-size: 0.8rem;
     }
 
-    /* ===== 页脚 ===== */
+    /* 页脚 */
     footer {
       text-align: center;
       color: var(--muted);
@@ -141,7 +153,7 @@
       padding: 25px;
     }
 
-    /* ===== 手机端适配 ===== */
+    /* 手机适配 */
     @media (max-width: 600px) {
       body {
         font-size: 16px;
@@ -184,7 +196,6 @@
 
 <body>
 
-  <!-- ===== 网站标题 ===== -->
   <header>
     <small>PERSONAL NOTES</small>
     <h1>冷月无声</h1>
@@ -192,16 +203,12 @@
     <small>一些旧人旧事，一点闲言碎语。</small>
   </header>
 
-  <!-- ===== 导航栏 ===== -->
   <nav>
     <a href="#about">关于</a>
     <a href="#history">读史</a>
   </nav>
 
-  <!-- ===== 正文 ===== -->
   <main>
-
-    <!-- 关于这里 -->
     <section id="about">
       <h2>关于这里</h2>
       <p>
@@ -212,7 +219,6 @@
       </p>
     </section>
 
-    <!-- 读史札记 -->
     <section id="history">
       <h2>读史札记</h2>
 
@@ -236,10 +242,8 @@
       </article>
 
     </section>
-
   </main>
 
-  <!-- ===== 页脚 ===== -->
   <footer>
     冷月无声 · 随兴而记
   </footer>
